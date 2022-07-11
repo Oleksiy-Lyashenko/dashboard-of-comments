@@ -3,6 +3,7 @@ import '../style/style.scss'
 
 import users from '../data/data.json';
 import Comment from './Comment';
+import Textarea from './Textarea';
 
 const  App: React.FC = () => {
   return (
@@ -11,6 +12,8 @@ const  App: React.FC = () => {
         {users.comments.map((comment) => (
           <Comment {...comment} key={comment.id}/>
         ))}
+
+        <Textarea {...users.currentUser}/>
 
       </div>
     </div>

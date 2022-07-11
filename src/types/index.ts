@@ -6,7 +6,7 @@ export interface User {
   username: string;
 }
 
-interface Replies {
+export interface RepliesType {
   id: number;
   content: string;
   createdAt: string;
@@ -21,7 +21,7 @@ export interface CommentType {
   createdAt: string;
   score: number;
   user: User;
-  replies: Replies[] | [];
+  replies: RepliesType[] | [];
 }
 
 // export interface E {

@@ -13,4 +13,7 @@
   --n-white: hsl(0, 0%, 100%);
 
   --paragraph-size: 16px;
+
+  --width-of-window: 750px;
+  --width-of-replies: calc(var(--width-of-window) - 85px);
 }
